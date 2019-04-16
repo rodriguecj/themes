@@ -1,0 +1,23 @@
+body{
+    background: url('../img/rojo.jpg');
+    background-attachment: fixed;
+}
+.fondo{
+    background: rgb(221, 15, 15);
+    color: white
+}
+#navegador ul li:hover{
+    background: rgb(221, 15, 15);
+    transition: 0.8s;
+}
+#reloj-1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(221, 15, 15);
+    border: 5px dashed rgb(221, 15, 15);
+    display: inline-block;
+    padding: 10px;
+    margin-left: 30%;
+    margin-top: 150px; 
+}

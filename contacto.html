@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+   
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id='theme' rel="stylesheet" href="css/green.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+        <div id="select-theme">
+            <div id="to-green"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+
+        <!--lienzo-->
+        <section id="lienzo">
+            <!--Header y logo-->
+            <section id="header">
+                <header>
+                    <div class="logo fondo">
+                        PRACTICANDO JS
+                    </div>
+                </header>
+                <nav id="navegador">
+                    <ul class="listado">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="presentacion.html">Sobre me</a></li>    
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+           
+            <!--Contenido-->
+            <section id="contenido">
+               <div id="form_box">
+                    <!--Formulario Contacto-->
+                    <h2>Contacto</h2>
+                    <form action="">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="form_nombre" name="nombre" data-validation="length alphanumeric" data-validation-length="min3">
+                        <label for="surname">Apellido: </label>
+                        <input type="text" id="surname" name="surname" data-validation="length alphanumeric" data-validation-length="min3">
+                        <label for="correo">Correo: </label>
+                        <input type="email" id="correo" name="correo">
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexo" id="sex">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input type="text" id="nacimiento" name="nacimiento" data-validation="date" data-validation-format="mm/dd/yyyy">
+                        <label for="edad">Edad: </label>
+                        <input type="text" id="edad" name="edad" data-validation="number">
+                       <input type="submit" value="Enviar" id='boton-enviar-contacto'>
+                    </form>
+               </div>    
+            </section>
+            <aside class="sider"> 
+              <div class="about">
+                  <h4>
+                    <span> Quien soy?</span>
+                  </h4>
+                  <img src="img/caracol.jpg"/>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus aspernatur ipsam ab reiciendis, perspiciatis qui ullam nesciunt non laborum, quod fugit cumque mollitia! Illum amet officia saepe inventore. Veniam, culpa?</p>
+              </div> 
+              <div class="login">
+                <h4>
+                    <span>Identificate</span>
+                </h4>
+                    <form action="">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="form_nombre" name="nombre">
+                        <label for="correo">Correo: </label>
+                        <input type="email" id="correo" name="correo">
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password">
+                        <input type="button" value="Enviar" id='boton-enviar'>
+                    </form>
+                
+              </div>     
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+        <footer class="footer">
+            Hecho por Jose Rodriguez &copy
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+    
+</body>
+</html>
